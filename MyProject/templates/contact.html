@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+<!-- Contact Section Start -->
+<div class="container contact">
+  <div class="row contact mb-3">
+    <div class="text-center fs-3 mb-5 mt-4">Contact <b class="txt-color2">Us <i class="fa-solid fa-photo-film ps-1"></i></b></div>
+    <div class="col-sm-6 ">
+      <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+
+
+        <div class="col-sm-8 bg-light pt-2 pb-2 rounded-3 shadow-lg ">
+
+
+          <form autocomplete="off" method="POST">
+            {% csrf_token %}
+            <div class="input-group mt-3 flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+              <input type="text" name="name" class="form-control" required placeholder="Name">
+            </div>
+            <div class="input-group mt-3 flex-nowrap">
+              <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" name="email" class="form-control" required placeholder="Email">
+            </div>
+            <div class="input-group mt-3 flex-nowrap">
+              <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+              <input type="number" name="mobile" class="form-control" required placeholder="Your Contact Number">
+            </div>
+            <div class="input-group mt-3 flex-nowrap">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input type="text" name="subject" class="form-control" required placeholder="Subject">
+            </div>
+            <div class="input-group mt-3 flex-nowrap">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input type="text" name="msg" class="form-control" required placeholder="Your Message">
+            </div>
+            <input type="submit" name="submit" value="submit" class="form-control bg-mycolor2 mt-2 ">
+          </form>
+        </div>
+
+      </div>
+<div class="col-sm-2"></div>
+    </div>
+    <div class="col-sm-6  ">
+      <div class="row">
+
+        <div class="col-sm-8 ms-1 py-5 bg-light txt-color2 shadow-lg">
+          <div class="fs-5 mb-1 " ><i class="fa-solid fa-location-dot pe-3"></i>MMIT Hariharpur
+            Uttar Pradesh Gorakhpur 273212</div>
+          <div class="fs-5  mb-1 " ><i class="fa-solid fa-phone pt-3 pe-3"></i>+91 2344562010,
+            +91 6588741032</div>
+          <div class="fs-5  mb-1 "><i class="fa-solid fa-phone pt-3 pe-3"></i>+91 2344562010,
+            +91 6588741032</div>
+          <div class="fs-5 mb-1" ><i
+              class="fa-solid fa-envelope pt-3 pe-3"></i>mmit@123gmail.com</div>
+
+        </div>
+        <div class="col-sm-2"></div>
+          <div class="col-sm-2"></div>
+      </div>
+
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 mt-2">
+      <iframe class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.4163019043826!2d80.96460006186601!3d26.898408178672085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39995785d5f7f1a5%3A0xffa47f1efe103f0d!2sTechpile%20Technology%20Pvt.%20Ltd.%20%7C%7C%20Internet%20website%20developers!5e0!3m2!1sen!2sin!4v1726639186699!5m2!1sen!2sin"
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>
+<!-- Contact Section End -->
+
+{% endblock %}

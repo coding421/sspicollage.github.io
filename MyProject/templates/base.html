@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/all.css' %}" rel="stylesheet" />
+  <style>
+    body{
+    overflow-x:hidden;
+    }
+    :root {
+      --bgcolor1:#812ab4 ;
+      --bgcolor2: red;
+      --bgcolor3: #ffb634;
+    }
+
+    .bg-mycolor1 {
+      background: var(--bgcolor1);
+    }
+
+    .bg-mycolor2 {
+      background: var(--bgcolor2);
+    }
+
+    .bg-mycolor3 {
+      background: var(--bgcolor3);
+    }
+
+    .txt-color1 {
+      color: var(--bgcolor1);
+    }
+
+    .txt-color2 {
+      color: var(--bgcolor2);
+    }
+
+    .txt-color3 {
+      color: var(--bgcolor3);
+    }
+
+    .t1 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .t1 {
+      font-size: 15px;
+    }
+
+    .ic {
+       border:2px solid var(--bgcolor2);
+      color:var(--bgcolor2);
+      height: 30px;
+      line-height: 30px;
+      width: 30px;
+      text-align: center;
+      border-radius: 1px;
+      transition: all .5s;
+    }
+
+    .ic:hover {
+
+      color: var(--bgcolor3);
+      transform: rotate(30deg);
+      transition: all .5s;
+        font-size:18px;
+    }
+
+    #menu {
+    min-height:60px;
+      background: transparent !important;
+    }
+
+    #menu ul li a {
+         color: white;
+
+
+    }
+     ul li a:hover
+        {
+        background-color:white;
+        color:black !important;
+        border-radius:2px;
+        }
+        .utka:hover{
+        color:#812ab4 !important;
+        }
+
+    .con:hover {
+      background: var(--bgcolor3);
+    }
+
+    .vision {
+      min-height: 330px;
+    }
+
+    .vline {
+      border-left: 5px solid red;
+      min-height: 50px;
+    }
+
+    .hline {
+      border-top: 5px solid red;
+      width: 40px;
+    }
+
+    .gallery {
+      min-height: 300px;
+    }
+
+    .recruiters {
+      min-height: 300px;
+    }
+
+    .rsection {
+      min-height: 100px;
+    }
+
+    .rimg {
+      max-height: 150px;
+    }
+
+    .AD,
+    #ipl p a {
+      text-decoration: none;
+
+    }
+    #ipl p a:hover{
+    color:#812ab4 !important;
+
+    }
+
+    .feedback {
+      min-height: 300px;
+    }
+
+    .notice {
+      min-height: 100px;
+
+    }
+
+    .about {
+      min-height: 300px;
+    }
+
+    .contact {
+      min-height: 300px;
+
+    }
+    .IMG{
+    ma
+    }
+    .imgcenter{
+
+    }
+    .bfooter a{
+    text-decoration:none;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0">
+    <div class="row t1 bg-secondary text-light text-center py-1">
+      <div class="col-sm-3 ">
+        <a href="#">FAQ</a> |
+        <a href="#">About us</a> |
+        <a href="/contact/">Contact & support</a>
+      </div>
+      <div class="col-sm-3 ">
+        <i class="fa-solid fa-phone ic"></i> +91,6306089067
+      </div>
+      <div class="col-sm-3">
+        <i class="fa-solid fa-envelope ic"></i> sp7827049@gmail.com
+      </div>
+      <div class="col-sm-3 pt-1">
+       <a href="/admin/" target="_balank" class="badge bg-mycolor2 rounded-pill" >Admin Card</a>
+      </div>
+    </div>
+    <div class="row t2 py-2">
+    <div class="col-sm-10 mx-auto">
+      <div class="row">
+        <div class="col-sm-2 ">
+       <center>  <img src="{% static 'images/logo.jpg'%}" class="img-thumbnail  " style="max-height:180px; border:none;"/></center>
+        </div>
+        <div class="col-sm-8  text-center pt-2">
+           <b class="fs-1 txt-color2 ">SWAMI SAHJANAND POLYTECHNIC INSTITUTE</b>
+            <br/><p class="fs-3"> Azamgarh</p>
+        </div>
+
+        <div class="col-sm-2 pt-5 text-center  mt-4" >
+          <a href=""><i class="fa-brands fa-instagram ic"></i></a>
+          <a href=""><i class="fa-brands fa-facebook ic"></i></a>
+          <a href=""><i class="fa-brands fa-youtube ic"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin ic"></i></a>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="row menu bg-mycolor2 sticky-top " style="min-height:30px;">
+
+      <div class="col-sm-10 mx-auto mt-1">
+        <!-- start menu-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 " id="menu">
+          <div class="container-fluid">
+
+            <a class="navbar-brand txt-color3 utka " href="#"></a>
+            <button class="navbar-toggler bg-mycolor3" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-1 ">
+                <li class="nav-item pe-3">
+
+                  <a class="nav-link active " aria-current="page" href="/home/"><i class="fa-solid fa-house  pe-2"></i>Home</a>
+                </li>
+                 <li class="nav-item pe-3">
+                  <a class="nav-link" href="/about/"><i class="fa-solid fa-address-card pe-2"></i>About us</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/infra/" ><i class="fa-solid fa-road-bridge pe-2"></i>Infrastructure</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/cources/"><i class="fa-solid fa-book pe-2"></i>Courses</a>
+                </li>
+
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/faculty/"><i class="fa-solid fa-users pe-2"></i>Faculty</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/alumni/"><i class="fa-solid fa-record-vinyl pe-2"></i>Alumni</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/recruiters/"><i class="fa-solid fa-user pe-2"></i>Recruiters</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/gallery/"><i class="fa-solid fa-photo-film pe-2"></i>Gallery</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/principal/"><i class="fa-solid fa-user-tie pe-2"></i>Principal</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link" href="/feedback/"><i class="fa-solid fa-comment pe-2"></i>Feedback</a>
+                </li>
+
+
+              </ul>
+
+            </div>
+           </div>
+        </nav>
+        <!-- end menu-->
+      </div>
+
+    </div>
+  <div class="row">
+    <div class="col-sm-12">
+      {% block childpage %}
+
+      {% endblock %}
+    </div>
+  </div>
+
+    <!-- About us Section start-->
+
+
+
+  <!-- About us Section end-->
+
+
+
+
+
+
+  <div class="row bg-dark mt-3" id="ipl" style="min-height:300px; ">
+    <section class="text-light ">
+      <div class="container text-center text-md-start mt-5">
+
+        <div class="row mt-3">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              ABOUT_US
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">About SSPI</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">History</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vision, Misson & Values</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Chairman's Message</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Principal's Message</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Working Committee</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Donors</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Principals</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              STUDENTS ZONE
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tentative Schedule</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Result</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gender Sensitization Cell</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> E-Magazine</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Scholarship & Free ship</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Anti Ragging Committtee</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Academic Calender</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Code Of Conduct</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Form</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 bal">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              ACTIVITIES
+            </h6>
+            <p style="list-style-type: none;">
+              <a href="#!" class="text-reset"> </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Cells & Committees</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Red Cross Activities</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> Maitri Setu</a>
+            </p>
+            <p style="list-style-type: none;">
+              <a href="#!" class="text-reset"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Educational Tour</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Sports Activities</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> NSS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"> NCC</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 ">
+
+            <h6 class="text-uppercase fw-bold mb-4">MEDIA</h6>
+            <p>
+              <a href="#!" class="text-reset">College News/Activities</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Downloads</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Photo Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Video Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Awards & Recognitions</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+<div class="row bfooter text-center text-light bg-dark py-2">
+  <div class="col-sm-6">
+    <a href="/portfolio/"><b class="txt-color1">Developed by : </b>Er Saurabh Prajapati </a>
+  </div>
+  <div class="col-sm-6">
+       <a href="http://www.techpile.in" target="_blank"><b class="txt-color1">&copy; Copyright to : </b>Techpile Technology Pvt. Ltd </a>
+  </div>
+</div>
+  </div>
+<!--  <div class="row">-->
+<!--    <div class="col-sm-5 mx-auto  my-4">-->
+<!--        <p class="fs-3 m-0">Developed by &ndash;&gt; <b class="txt-color1">UTKARSH SRIVASTAVA</b></p>-->
+
+<!--    </div>-->
+<!--</div>-->
+  <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+</body>
+
+</html>

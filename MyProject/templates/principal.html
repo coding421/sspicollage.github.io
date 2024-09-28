@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block childpage %}
+<style>
+    .anka{
+    text-decoration:none;
+    color:red;
+    }
+
+</style>
+<div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">Principal <b class="txt-color2"> Saya <i class="fa-solid fa-book ps-1"></i></b></p>
+        <hr/>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row">
+                      <div class="fs-3 p-3 ps-5"> Principal <b class="txt-color2">Message</b> </div>
+
+                <div class="col-sm-6">
+                    <img src="{% static 'images/prin.jpg' %}" style="max-height:550px; " class="img-fluid rounded-3 float-start"/>
+                </div>
+                <div class="col-sm-6 p-2">
+                  <p  style="text-align:justify;"> It is a matter of great pride and satisfaction
+for COLLEGE Name to bring out
+the News Letter ‘I’STORM’ Released from the
+Department of Information Technology. The
+College has made tremendous progress in all areas-
+academic, non-academics, capacity building
+relevant to staff and students. The College has
+achieved another milestone in getting NBA
+(National Board of Accreditation).I am confident
+that this issue of Department News Letter will send
+a positive signal to the staff, students and the
+person who are interested in the Technical
+education and Technology based activities. A News
+Letter is like a mirror which reflects the clear
+picture of all sorts of activities undertaken by a
+Department and develops writing skills among
+students in particular and teaching faculty in
+general. I congratulate the Editorial Board of this
+News Letter who have played wonderful role in
+accomplishing the task in Record time. I express my
+deep sense of gratitude to Dr.N.Balaji, HOD/IT
+under whose guidance this Technical work has
+been undertaken and completed within the
+stipulated time. Also my heartfelt Congratulations
+to staff members and Students for their fruitful
+effort. With Best Wishes.
+ </p>
+                    <div class="text-end"><b>PRINCIPAL<br/>
+Dr.A.V. RAMPRASAD</b></div>
+                </div>
+            </div>
+        </div>
+         <div class="col-sm-4 pt-5">
+             <div class="card mx-auto mt-5 w-75 border-0 shadow-lg" style="width: 18rem;">
+  <div class="card-header">
+    Useful Links
+  </div>
+  <ul class="list-group list-group-flush " >
+    <li class="list-group-item">University at a Glance</li>
+    <li class="list-group-item"><a class="anka" href="/about/">About Us</a></li>
+    <li class="list-group-item"><a class="anka" href="/gallery/">Gallery</a></li>
+    <li class="list-group-item"><a class="anka" href="/infra/">Infrastructure</a></li>
+    <li class="list-group-item"><a class="anka" href="/courses/">Our Courses</a></li>
+    <li class="list-group-item"><a class="anka" href="/recruiters/">Our Recruiters</a></li>
+    <li class="list-group-item"><a class="anka" href="/alumni/">Our Alumni</a></li>
+    <li class="list-group-item"><a class="anka" href="/about/">Our Faculty Members</a></li>
+  </ul>
+</div>
+         </div>
+    </div>
+</div>
+{% endblock %}

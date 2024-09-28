@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+<style>
+
+    .infra:hover{
+    filter:grayscale(0%);
+    transition:1s;
+    transform:scale(1.02);
+    }
+
+    .cicon
+    {
+    height:90px;
+    width:90px;
+    background:var(--bgcolor2);
+    font-size:30px;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    line-height:90px;
+    }
+</style>
+<!--start heading-->
+<div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">Our<b class="txt-color2"> Courses <i class="fa-solid fa-book ps-1"></i></b></p>
+        <hr/>
+    </div>
+</div>
+<!--end heading-->
+
+<div class="row">
+
+    <div class="col-sm-10 mx-auto">
+        <div class="row">
+            <!--start gallery-->
+{% for c in data %}
+
+
+                 <div class="col-sm-4 ">
+                <div class="card text-center shadow-lg mb-2 mt-5 bg-body-teritary rounded border-0 p-4">
+
+
+                    <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill ">
+                        <i class="fa-solid fa-code-branch cicon"></i> <span class="visually-hidden">unread messages</span></span>
+
+                  <h3 class="text-center pt-4">{{c.department}}</h3>
+                <b>Course Code :<i class="text-muted">{{c.course_code}}</i></b>
+                <b>No of Seats :<i class="text-muted">{{c.seats}}</i></b>
+                <b>Duration : <i class="text-muted">{{c.duration}}</i></b>
+                <a href="#" class="form-control shadow-lg rounded-0 w-50 bg-mycolor2 text-light mx-auto mt-2" style="text-decoration:none;">View Syllabus</a>
+                </div>
+            </div>
+                {% endfor %}
+            <!--end infra-->
+        </div>
+    </div>
+
+</div>
+
+<!--start heading-->
+
+
+
+
+{% endblock %}

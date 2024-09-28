@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<style>
+    .inf{
+     transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .inf:hover{
+ transform:scale(1.1);
+ transition:0.1s;
+}
+</style>
+
+ <div class="container about">
+
+     <div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">About<b class="txt-color2">Us <i class="fa-solid fa-book ps-1"></i></b></p>
+        <hr/>
+    </div>
+</div>
+
+      <div class="fs-4">Univercity at a <b class="txt-color2">Glance</b></div>
+      <hr />
+      <div class="row mb-3 mx-auto ">
+                <div class="col-sm-4 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-solid fa-calendar-day px-2 py-2 rounded-circle bg-info"></i></div>
+                    <div class="text-center fe-4">Year of Establishment</div>
+                    <div class="text-center txt-color1 fs-5">2003</div>
+                </div>
+                <div class="col-sm-4 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-regular fa-star  px-2 py-2 rounded-circle bg-warning"></i></div>
+                    <div class="text-center fe-4">Number of Faculties</div>
+                    <div class="text-center txt-color1 fs-5">12</div>
+                </div>
+                <div class="col-sm-4 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-solid fa-book px-2 py-2 rounded-circle bg-info"></i></div>
+                    <div class="text-center fe-4">Our Campuses</div>
+                    <div class="text-center txt-color1 fs-5">219.0 acres</div>
+                </div>
+            </div>
+            <div class="row mb-3 mx-auto">
+                <div class="col-sm-4 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-solid fa-user px-2 py-2 rounded-circle bg-info"></i></div>
+                    <div class="text-center fe-4">Number of Faculties</div>
+                    <div class="text-center txt-color1 fs-5">15</div>
+                </div>
+                <div class="col-sm-4 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-solid fa-user px-2 py-2 rounded-circle bg-info"></i></div>
+                    <div class="text-center fe-4">Year of Establishment</div>
+                    <div class="text-center txt-color1 fs-5">2015</div>
+                </div>
+                <div class="col-sm-3 mt-4 me-5 px-2 py-2 card inf text-center shadow-lg  bg-body-tertiary rounded border-0 " style="width:24rem;">
+                    <div class="text-center"><i class="fa-solid fa-user px-2 py-2 rounded-circle bg-info"></i></div>
+                    <div class="text-center fe-4">Year of Establishment</div>
+                    <div class="text-center txt-color1 fs-5">2015</div>
+                </div>
+            </div>
+      <div class="hline"></div>
+      <div class="txt-color1 fs-4 ">About <b>us</b></div>
+      <div class="row about">
+        <div class="col-sm-6 px-3 py-3"  style="text-align:justify;">IIT Bombay was established in 1958. It attracts top-tier students. Its renowned faculty drives research and academics, forging collaborations with national and international peers. Alumni excel in various fields, contributing to industry, academia, research, and more. The institute offers innovative short-term courses, continuing education, and distance learning. Faculty members have received prestigious awards, including the Shanti Swaroop Bhatnagar and Padma honors. It provides a fully residential experience with hostels, dining, sports, and recreational facilities.</div>
+        <div class="col-sm-6 px-3 py-3">
+          <img class="img-thumbnail IMG" src="{% static 'images/IIT1.png'%}" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"> <img class="img-thumbnail" src="{% static 'images/IIT2.jpg'%}" /></div>
+        <div class="col-sm-6">
+          <div class="hline "></div>
+          <div class="txt-color1 fs-4">Mission</div>
+          <div  style="text-align:justify;">IIT Bombay is an autonomous institute and deemed university governed by a board of governors, chaired by the president of India. It operates under the guidance of the IIT Council, established by India's ministry of education (MoE) (earlier called human resource development). The director, appointed by MoE, leads the institute for a five-year term, overseeing academic matters and serving on various committees. The senate, composed of professors and nominated members, ensures academic standards. The administrative functions are managed by the registrar and senior officials. The institute advisory council, comprising industry and academic experts, provides input on policies and goals.</div>
+
+          <div class="fs-4 txt-color1 mt-2 ">Education for life</div>
+          <div style="text-align:justify;">While some believe that education is for intellectual development, others believe that it serves more of a social and moral purpose, to help children understand society. Others view education as simply a part of running the economy, preparing children for future careers.</div>
+        </div>
+      </div>
+        <div class="row mt-4">
+        <div class="col-sm-6">
+             <div class="hline "></div>
+          <div class="txt-color1 fs-4">Mission</div>
+          <div  style="text-align:justify;"> Dharmendra Pradhan (pronounced [dharmendra pradhan]; born 26 June 1969) is an Indian politician who is serving as Union Minister of Education since 2021. He also served as Minister of Skill Development and Entrepreneurship in the Government of India from 2021 to 2024. An alumnus of Talcher Autonomous College and Utkal University, he has also been the Minister of Petroleum & Natural Gas and the Minister of Steel.</div>
+        </div>
+        <div class="col-sm-6 ">
+
+       <img class="img-thumbnail" style="min-height:350px;" src="{% static 'images/edu.jpeg'%}" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}

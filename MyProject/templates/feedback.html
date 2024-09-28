@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+<style>
+    .form-control{
+    height:50px;
+    border:none;
+    border-radius:0px !importent;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">Write Your Valuable <b class="txt-color2"> Feedback <i class="fa-solid fa-user ps-1"></i></b></p>
+
+        <hr/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-10 mx-auto">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <form method="post" enctype="multipart/form-data">{% csrf_token %}
+                     Name<br/><input type="text" name="name" placeholder="Enter Your Name...." class="form-control shadow-lg mb-2"/>
+                     Your Picture<br/><input type="file" name="fu" class="form-control shadow-lg mb-2"/>
+                     Write your Valuable Feedback<br/>
+                     <textarea style="min-height:150px; resize:none;" name="message" placeholder="Enter Your Feedback..." class="form-control shadow-lg mb-2"></textarea>
+                    <input type="submit" value="Save" class="form-control shadow-lg mb-2 w-25 bg-mycolor2 text-light">
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <img src="{% static 'images/feed.jpg' %}" class="img-thumbnail border-0 mt-3 ms-2">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

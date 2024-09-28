@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block childpage %}
+
+ <div class="row">
+
+          <div class="sol sm- 12">
+
+
+          </div>
+        </div>
+        <div class="row slider ">
+
+  <div class="col-sm-12 px-0">
+    <!--start slider-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+          {% for x in sliderdata %}
+        <div class="carousel-item active " data-bs-delay="0">
+          <img src="{{x.slider_image}}" height="550px" class="d-block img w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>{{x.title}}</h5>
+            <p>{{x.description}}</p>
+          </div>
+        </div>
+{% endfor %}
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--end slider-->
+  </div>
+</div>
+ <div class="container-fluid bg-light">
+
+    <div class="container notice">
+      <div class="row notice ">
+        <div class="col-sm-8">
+          <div class="row rounded-3 my-4 " style="background:white;">
+            <div class="fs-3 text-center">Latest <b class="txt-color2">Notice</b></div>
+
+
+          </div>
+            <marquee direction="up" onmouseover="stop()" onmouseleave="start()">
+            {% for x in ndata %}
+            <!-- start notice section-->
+
+
+            <div class="row p-3 shadow-lg mb-1 bg-body-tertiary rounded">
+              <div class="col-sm-4">
+                    <p class="text-muted">  <i class="fa-solid fa-calendar-days pe-1 txt-color2"></i><b>Posted date : {{x.posted_date}}</b></p>
+               </div>
+                <div class="col-sm-8">
+                    <a href="{{x.notice_link}}" target="_blank" style="text-decoration:none;" class="text-muted">
+                     <img src="{% static 'images/new.gif'%} " height="40px"/>
+                        {{x.notice}}
+                    </a>
+                </div>
+            </div>
+            <!-- end notice section-->
+            {% endfor %}
+</marquee>
+
+          </div>
+        <div class="col-sm-4">
+          <div class="row my-4 rounded-3 px-2 mx-1 " style="background:white;">
+            <div class="fs-4 text-center">Latest <b class="txt-color2"> Event</b></div>
+           <div class="col-sm-2">
+              <p>15 sep</p>
+            </div>
+            <div class="col-sm-10">
+              <p>IIT Bombay Celebrates National Engineer's Day</p>
+            </div>
+            <hr />
+            <div class="col-sm-2">05 sep</div>
+            <div class="col-sm-10">
+              <p>IIT Bombay celebrates Teachers’ Day</p>
+            </div>
+            <hr />
+            <div class="col-sm-2">15 aug</div>
+            <div class="col-sm-10">
+              <p>IIT Bombay Celebrates 78th Independence Day</p>
+            </div>
+            <hr/><div class="col-sm-2">14 aug</div>
+            <div class="col-sm-10">
+              <p>Observance of Partition Horrors Remembrance Day</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="fs-2 text-center">-- Vision &<b class="txt-color2"> Founder--</b></div>
+  <div class="container vision">
+    <div class="row mt-3 vision">
+      <div class="col-sm-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static 'img/yogi.jpg' %}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ms-4 mt-2">
+                <h5 class="card-title">Shri Yogi Adityanath</h5>
+                <h5 class="card-title">hon'ble chief Minister</h5>
+                <h5 class="card-title">Goverment of Utter Pradesh</h5>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vline px-4 py-4 mb-3">
+          Yogi Adityanath (born Ajay Mohan Singh Bisht; 5 June 1972)[a] is an Indian Hindu monk and politician, belonging to the Bharatiya Janata Party who has been serving as the Chief Minister of Uttar Pradesh since 19 March 2017. He is the longest serving chief minister of Uttar Pradesh, being in office for 7 years,[6] and the only UP chief minister to have two consecutive terms
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static 'img/minister.jpg' %}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Shri Ashish Patel</h5>
+                <h5 class="card-title">BTUP Education Minister</h5>
+                <h5 class="card-title">hon'ble minister for</h5>
+                <h5 class="card-title">Technical Education , UP</h5>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vline px-4 py-4 mb-3">
+         Ashish Singh Patel is an Indian politician currently serving as Cabinet minister, Government of Uttar Pradesh. He is Technical Education, Consumer Protection, Weights and Measures Minister, Government of Uttar Pradesh and also member of the Uttar Pradesh Legislative Council.
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <!--Feedback Section Start-->
+<div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">Student <b class="txt-color2"> Says<i class="fa-solid fa-user ps-1"></i></b></p>
+
+        <hr/>
+    </div>
+</div>
+
+  <div class="container feedback">
+    <div class="row feedback">
+        {% for i in fdata %}
+      <div class="col-sm-6 ">
+        <div class="shadow-lg p-4 mb-3">
+          <div class=" vline px-3 mt-3">
+              {{i.feedback}}
+              <div class="row mx-4 my-3">
+                    <div class="col-sm-2"><img class="rounded-circle" src="{{i.picture}}" height="40px" /></div>
+                  <div class="col-sm-10 "><b class="ms-4 mt-5">{{i.name}}</b>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+ {% endfor %}
+        </div>
+
+  </div>
+ <!-- Feedback Section end-->
+
+
+{% endblock %}

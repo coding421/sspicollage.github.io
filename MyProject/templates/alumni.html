@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5 mx-auto text-center my-4">
+        <p class="fs-3 m-0">Our<b class="txt-color2"> Alumni <i class="fa-solid fa-book ps-1"></i></b></p>
+        <hr/>
+    </div>
+</div>
+    <div class="row my-4">
+{% for a in adata %}
+        <div class="col-sm-3">
+            <div class="card mx-auto shadow-lg border-0 mb-3" style="width: 18rem;">
+                <div class="card-body text-center">
+                     <center>  <img class="rounded-circle imgcenter" height="120" width="120" src="../{{a.student_picture}}"/></center>
+
+                     <h4 class="card-title mt-2">{{a.name}}</h4>
+                     <h6 class="card-subtitle mb-2 text-body-secondary">Company :<b> {{a.company_name}}</b> </h6>
+                     <h6 class="card-subtitle mb-2 text-body-secondary">Placement Session : <b> {{a.placement_session}}</b></h6>
+                  </div>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+    </div>
+{% endblock%}
